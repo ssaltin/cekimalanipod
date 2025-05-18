@@ -1,158 +1,253 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="src/favicon.ico" type="image/x-icon">
-  <title>Çekim Alanı Podcast</title>
-  <meta name="description" content="Çekim Alanı Podcast: Dizi ve film sohbetlerinin buluşma noktası." />
-  <meta name="keywords" content="Çekim Alanı, podcast, dizi podcasti, film podcasti, sinema, televizyon, karakter analizi" />
-  <meta name="author" content="Çekim Alanı" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+    <title>Çekim Alanı Podcast</title>
+    <meta name="description" content="Çekim Alanı Podcast: Dizi ve film sohbetlerinin buluşma noktası."/>
+    <meta name="keywords"
+          content="Çekim Alanı, podcast, dizi podcasti, film podcasti, sinema, televizyon, karakter analizi"/>
+    <meta name="author" content="Çekim Alanı"/>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VMTLXTQ5MV"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VMTLXTQ5MV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'G-VMTLXTQ5MV');
-  </script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Çekim Alanı Podcast" />
-  <meta property="og:description" content="Her hafta dizi ve film dünyasında keşfe çıkın. Podcastimize katılın!" />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Çekim+Alanı+Podcast" />
-  <meta property="og:url" content="https://cekimalani.com" />
-  <meta property="og:type" content="website" />
+      gtag('js', new Date());
+      gtag('config', 'G-VMTLXTQ5MV');
+    </script>
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Çekim Alanı Podcast" />
-  <meta name="twitter:description" content="Dizi ve film sohbetlerinin adresi." />
-  <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Çekim+Alanı+Podcast" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Çekim Alanı Podcast"/>
+    <meta property="og:description" content="Her hafta dizi ve film dünyasında keşfe çıkın. Podcastimize katılın!"/>
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Çekim+Alanı+Podcast"/>
+    <meta property="og:url" content="https://cekimalani.com"/>
+    <meta property="og:type" content="website"/>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #eee;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #1f1f1f;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header h1 {
-      font-size: 1.5rem;
-      color: #fff;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1rem;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #1db954;
-    }
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 0 1rem;
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Çekim Alanı Podcast"/>
+    <meta name="twitter:description" content="Dizi ve film sohbetlerinin adresi."/>
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png?text=Çekim+Alanı+Podcast"/>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            color: #eee;
         }
-    .social-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .social-links a {
-      display: flex;
-      align-items: center;
-      background-color: #222;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #eee;
-      transition: background 0.3s ease;
-    }
-    .social-links a:hover {
-      background-color: #333;
-    }
-    .social-links img {
-      width: 24px;
-      height: 24px;
-      margin-right: 0.5rem;
-    }
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav {
-        margin-top: 0.5rem;
-      }
-      .social-links {
-        flex-direction: column;
-      }
-      header img {
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-      }
-    }
-  </style>
+
+        header {
+            background-color: #1f1f1f;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 2rem;
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            gap: 1.5rem;
+        }
+
+        .menu li {
+            list-style: none;
+            position: relative;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            color: #1db954;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2a2a2a;
+            min-width: 160px;
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            border-radius: 8px;
+            padding: 0.5rem 0;
+        }
+
+        .dropdown-content li {
+            padding: 0.5rem 1rem;
+        }
+
+        .dropdown-content li a {
+            color: #eee;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #1f1f1f;
+                padding: 1rem 0;
+            }
+
+            .menu.show {
+                display: flex;
+            }
+
+            .menu li {
+                margin: 0.5rem 0;
+            }
+
+            .dropdown-content {
+                position: static;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: none;
+            }
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            background-color: #222;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #eee;
+            transition: background 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #333;
+        }
+
+        .social-links img {
+            width: 24px;
+            height: 24px;
+            margin-right: 0.5rem;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-          <div style="text-align: center;">
-            <img src="https://s3-us-west-2.amazonaws.com/anchor-generated-image-bank/staging/podcast_uploaded_nologo400/42379562/42379562-1738088619443-779a83445e713.jpg" 
-                 alt="Çekim Alanı Podcast Logosu"
-                 style="width: 120px; height: auto; border-radius: 12px; margin-bottom: 0.5rem;" />
-          </div>
-          <nav style="text-align: right; margin-top: 1rem;">
-            <a href="filmler.html">Filmler</a>
-            <a href="diziler.html">Diziler</a>
-          </nav>
-        </div>
-      </header>
-      
+<header>
+    <div class="container">
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-  <div class="container">
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="diziler.html">Diziler</a>
+                    <ul class="dropdown-content">
+                        <li><a href="diziler/shogun.html">Shogun</a></li>
+                        <li><a href="diziler/succession.html">Succession</a></li>
+                        <li><a href="diziler/the-last-of-us.html">The Last of Us</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="filmler.html">Filmler</a>
+                    <ul class="dropdown-content">
+                        <li><a href="filmler/interstellar.html">Interstellar</a></li>
+                        <li><a href="filmler/gone-girl.html">Gone Girl</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container" style="flex-direction: column; align-items: flex-start;">
     <p>
-      <strong>Çekim Alanı'na hoş geldiniz!</strong> Her hafta televizyon dizilerinin ve sinemanın büyülü dünyasında keyifli bir yolculuğa çıkıyoruz.
-      En son çıkan yapımlar, klasikleşmiş diziler ve filmler hakkında derinlemesine sohbetler yaparken, karakter analizlerinden senaryo detaylarına kadar her şeyi masaya yatırıyoruz.
-      Eğer siz de dizi ve film tutkunuzsanız, Çekim Alanı sizin için doğru adres. Hadi, ekran karşısındaki bu sohbetlere katılın ve her hafta yeni bir keşif yapın!
+        <strong>Çekim Alanı'na hoş geldiniz!</strong> Her hafta televizyon dizilerinin ve sinemanın büyülü dünyasında
+        keyifli bir yolculuğa çıkıyoruz.
+        En son çıkan yapımlar, klasikleşmiş diziler ve filmler hakkında derinlemesine sohbetler yaparken, karakter
+        analizlerinden senaryo detaylarına kadar her şeyi masaya yatırıyoruz.
+        Eğer siz de dizi ve film tutkunuzsanız, Çekim Alanı sizin için doğru adres. Hadi, ekran karşısındaki bu
+        sohbetlere katılın ve her hafta yeni bir keşif yapın!
     </p>
 
     <div class="social-links">
-      <a href="https://open.spotify.com/show/3QOFn0Yx54pNsiQWUowIxY" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
-        Spotify
-      </a>
-      <a href="https://podcasts.apple.com/nl/podcast/%C3%A7ekim-alan%C4%B1/id1777899369" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Podcasts">
-        Apple Podcasts
-      </a>
-      <a href="https://www.audible.co.uk/podcast/Cekim-Alan/B0DW23FXZS" target="_blank">
-        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/audible-icon.svg" alt="Audible" />
-        Audible
-      </a>
-      <a href="https://www.tiktok.com/@cekimalanipod" target="_blank">
-        <img src="https://www.svgrepo.com/show/431991/tiktok.svg" alt="TikTok">
-        TikTok
-      </a>
-      <a href="https://www.instagram.com/cekimalanipod/" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        Instagram
-      </a>
+        <a href="https://open.spotify.com/show/3QOFn0Yx54pNsiQWUowIxY" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify">
+            Spotify
+        </a>
+        <a href="https://podcasts.apple.com/nl/podcast/%C3%A7ekim-alan%C4%B1/id1777899369" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Podcasts">
+            Apple Podcasts
+        </a>
+        <a href="https://www.audible.co.uk/podcast/Cekim-Alan/B0DW23FXZS" target="_blank">
+            <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/audible-icon.svg"
+                 alt="Audible"/>
+            Audible
+        </a>
+        <a href="https://www.tiktok.com/@cekimalanipod" target="_blank">
+            <img src="https://www.svgrepo.com/show/431991/tiktok.svg" alt="TikTok">
+            TikTok
+        </a>
+        <a href="https://www.instagram.com/cekimalanipod/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            Instagram
+        </a>
     </div>
-  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    menu.classList.toggle('show');
+  }
+</script>
 </body>
 </html>
