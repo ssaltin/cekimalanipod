@@ -43,7 +43,6 @@
     </script>
 
 
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VMTLXTQ5MV"></script>
     <script>
@@ -276,23 +275,45 @@
             transition: transform 0.2s, box-shadow 0.3s;
             background-color: #1f1f1f;
             color: #eee;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
         }
 
         .social-button img {
-            width: 24px;
-            height: 24px;
+            height: auto;
+            max-height: 24px;
+            width: auto;
+            max-width: 24px;
         }
 
         .social-button:hover {
             transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
         }
 
-        .spotify:hover { background-color: #1db954; color: #000; }
-        .apple:hover { background-color: #f5f5f5; color: #000; }
-        .tiktok:hover { background-color: #010101; color: #fff; }
-        .instagram:hover { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%); color: white; }
+        .youtube:hover {
+            background-color: #FF0000;
+            color: white;
+        }
+
+        .spotify:hover {
+            background-color: #1db954;
+            color: #000;
+        }
+
+        .apple:hover {
+            background-color: #f5f5f5;
+            color: #000;
+        }
+
+        .tiktok:hover {
+            background-color: #010101;
+            color: #fff;
+        }
+
+        .instagram:hover {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            color: white;
+        }
 
     </style>
 </head>
@@ -326,10 +347,13 @@
 <div class="container" style="flex-direction: column; align-items: flex-start;">
     <div class="highlight-text">
         Çekim Alanı Podcast'e hoş geldiniz!
-        Dizi ve film dünyasının derinliklerine inerek, Shogun, Succession, The Last of Us, Interstellar ve Gone Girl gibi yapımları detaylıca inceliyoruz.
+        Dizi ve film dünyasının derinliklerine inerek, Shogun, Succession, The Last of Us, Interstellar ve Gone Girl
+        gibi yapımları detaylıca inceliyoruz.
         Her bölümde karakter analizleri, senaryo çözümleri ve sektördeki yenilikleri sizlerle paylaşıyoruz.
-        Sinema ve televizyon tutkunları için hazırladığımız sohbetlerle, ekran karşısındaki deneyiminizi zenginleştiriyoruz.
-        Bizi Spotify, Apple Podcasts, YouTube, Instagram ve TikTok üzerinden takip ederek, yeni bölümlerden ve özel içeriklerden anında haberdar olabilirsiniz.
+        Sinema ve televizyon tutkunları için hazırladığımız sohbetlerle, ekran karşısındaki deneyiminizi
+        zenginleştiriyoruz.
+        Bizi Spotify, Apple Podcasts, YouTube, Instagram ve TikTok üzerinden takip ederek, yeni bölümlerden ve özel
+        içeriklerden anında haberdar olabilirsiniz.
         Çekim Alanı, sadece izlemek değil, anlamak isteyenlerin buluşma noktasıdır.
         Her hafta yeni bölümlerle dizi ve film severlere ilham vermeye devam ediyoruz.
         Podcastimizi dinleyin, tartışmalara katılın ve film-dizi dünyasının büyüsünü birlikte keşfedelim.
@@ -347,7 +371,8 @@
         <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/episode/71EZtYM8Gs7O6wjg0zAZRt?utm_source=generator&theme=0"
                 width="100%" height="250" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
     </div>
 
     <div class="social-links">
@@ -359,6 +384,10 @@
             <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Podcasts">
             Apple Podcasts
         </a>
+        <a class="social-button youtube" href="https://www.youtube.com/@CekimAlaniPodcast" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/YouTube_icon_%282013-2017%29.png/480px-YouTube_icon_%282013-2017%29.png" alt="YouTube">
+            YouTube
+        </a>
         <a class="social-button tiktok" href="https://www.tiktok.com/@cekimalanipod" target="_blank">
             <img src="https://www.svgrepo.com/show/431991/tiktok.svg" alt="TikTok">
             TikTok
@@ -368,6 +397,7 @@
             Instagram
         </a>
     </div>
+
 </div>
 
 <script>
