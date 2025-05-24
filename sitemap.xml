@@ -10,6 +10,11 @@
   <lastmod>2025-05-24T10:00:24+00:00</lastmod>
   <priority>1.00</priority>
 </url>
+  <url>
+    <loc>https://cekimalanipod.com/index.html</loc>
+    <lastmod>2025-05-24T10:00:24+00:00</lastmod>
+    <priority>0.95</priority>
+  </url>
 <url>
   <loc>https://cekimalanipod.com/diziler.html</loc>
   <lastmod>2025-05-20T10:00:24+00:00</lastmod>
@@ -35,21 +40,16 @@
   <lastmod>2025-05-20T10:00:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://cekimalanipod.com/filmler/interstellar.html</loc>
-  <lastmod>2025-05-20T10:00:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cekimalanipod.com/filmler/gone-girl.html</loc>
-  <lastmod>2025-05-20T10:00:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://cekimalanipod.com/index.html</loc>
-  <lastmod>2025-05-20T10:00:24+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
+<!--<url>-->
+<!--  <loc>https://cekimalanipod.com/filmler/interstellar.html</loc>-->
+<!--  <lastmod>2025-05-20T10:00:24+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
+<!--<url>-->
+<!--  <loc>https://cekimalanipod.com/filmler/gone-girl.html</loc>-->
+<!--  <lastmod>2025-05-20T10:00:24+00:00</lastmod>-->
+<!--  <priority>0.80</priority>-->
+<!--</url>-->
 <url>
   <loc>https://cekimalanipod.com/diziler/duster-podcast.html</loc>
   <lastmod>2025-05-20T10:00:24+00:00</lastmod>
